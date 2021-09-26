@@ -23,8 +23,8 @@ MIX_ENV=prod mix compile
 // Next
 MIX_ENV=prod mix assets.deploy
 
-// Next 
-PORT=4001 MIX_ENV=prod mix phx.server
+// Next (monkey with the pool size. Makes a huge difference)
+POOL_SIZE=50 PORT=4001 MIX_ENV=prod mix phx.server
 ```
 ------------------------------------------------
 BELOW IS FROM ORIGINAL REPO
