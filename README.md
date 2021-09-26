@@ -1,3 +1,12 @@
+# My Helpful Info
+
+Deploy info:
+https://hexdocs.pm/phoenix/deployment.html
+
+
+
+
+
 # Dockerized Elixir/Phoenix Development Environment
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/nicbet/docker-phoenix)
