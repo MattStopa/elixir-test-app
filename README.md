@@ -1,14 +1,34 @@
 # My Helpful Info
 
 Deploy info:
+
 https://hexdocs.pm/phoenix/deployment.html
+
 Original repo link:
+
 https://github.com/nicbet/docker-phoenix
 
 DB connection string
 postgres:postgres
 
 export DATABASE_URL=ecto://postgres:postgress@db/test_dev
+
+
+*** Steps to deploy ***
+mix phx.gen.secret
+export SECRET_KEY_BASE=YOUR SECRET
+export DATABASE_URL=ecto://USER:PASS@HOST/database
+
+// Next
+
+mix deps.get --only prod
+MIX_ENV=prod mix compile
+
+// Next
+MIX_ENV=prod mix assets.deploy
+
+// Next 
+PORT=4001 MIX_ENV=prod mix phx.server
 
 ------------------------------------------------
 BELOW IS FROM ORIGINAL REPO
