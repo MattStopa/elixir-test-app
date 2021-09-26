@@ -18,6 +18,7 @@ defmodule HelloWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
@@ -32,14 +33,12 @@ defmodule HelloWeb.Router do
   # If your application does not have an admins-only section yet,
   # you can use Plug.BasicAuth to set up some basic authentication
   # as long as you are also using SSL (which you should anyway).
-  if Mix.env() in [:dev, :test] do
     import Phoenix.LiveDashboard.Router
 
     scope "/" do
       pipe_through :browser
       live_dashboard "/dashboard", metrics: HelloWeb.Telemetry
     end
-  end
 
   # Enables the Swoosh mailbox preview in development.
   #

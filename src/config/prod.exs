@@ -10,9 +10,9 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :hello, HelloWeb.Endpoint,
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
-
+  url: [host: "147.182.133.68", port: 4001],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  pool_size: 0
 # Do not print debug messages in production
 config :logger, level: :info
 
