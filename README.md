@@ -1,3 +1,18 @@
+# My Helpful Info
+
+Deploy info:
+https://hexdocs.pm/phoenix/deployment.html
+Original repo link:
+https://github.com/nicbet/docker-phoenix
+
+DB connection string
+postgres:postgres
+
+export DATABASE_URL=ecto://postgres:postgress@db/test_dev
+
+------------------------------------------------
+BELOW IS FROM ORIGINAL REPO
+
 # Dockerized Elixir/Phoenix Development Environment
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/nicbet/docker-phoenix)
