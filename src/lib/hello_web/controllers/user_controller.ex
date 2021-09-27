@@ -27,6 +27,7 @@ defmodule HelloWeb.UserController do
   end
 
   def show(conn, %{"id" => id}) do
+    #Accounts.create_user(%{name: "Matt", age: 44})
     user = Accounts.get_user!(id)
     render(conn, "show.html", user: user)
   end
